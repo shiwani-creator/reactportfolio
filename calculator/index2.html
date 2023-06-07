@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input id="header" type="number" name="">
+        <input id="header2" type="number" name="">
+        <input id="header3" type="number" placeholder="answer" disabled><br><br>
+        <input id="head" type="button" value="+">
+        <input id="subHead" type="button" value="*">
+        <input id="subHead1" type="button" value="-">
+        <input id="subHead3" type="button" value="/">
+    </div>
+    <script>
+        head.onclick = function(e){
+           console.log(header.value)
+           console.log(header2.value)
+           add (Number(header.value) ,Number(header2.value));
+        }
+        // head.onclick = function(e){
+           
+        
+        function add(num1,num2){
+            let res = (num1+num2)
+            header3.value=res;
+        }
+        subHead.onclick = function(e){
+            console.log(header.value)
+            console.log(header2.value)
+            mul(header.value,header2.value);
+        }
+            function mul(num1,num2){
+                let ans =(num1*num2)
+                header3.value=ans;
+            }
+            subHead1.onclick = function(e){
+            console.log(header.value)
+            console.log(header2.value)
+            sub(header.value,header2.value);
+        }
+            function sub(num1,num2){
+                let res =(num1-num2)
+                header3.value=res;
+            } 
+            subHead3.onclick = function(e){
+                console.log(header.value)
+                console.log(header2.value)
+                div(header.value, header2.value);
+            }
+            function div(num1,num2){
+                let res=(num1/num2)
+                header3.value=res;
+            }
+    </script>
+</body>
+</html>
